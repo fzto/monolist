@@ -33,7 +33,7 @@
             <% @item.have_users.each do |u| %>
               <%= link_to user_path(u) do %>
                 <span class="gravatar">
-                  <%= gravatar_for u %>
+                  <%= gravatar_for u, size: 24 %>
                 </span>
               <% end %>
             <% end %>
@@ -46,7 +46,7 @@
             <% @item.want_users.each do |u| %>
               <%= link_to user_path(u) do %>
                 <span class="gravatar">
-                  <%= gravatar_for u %>
+                  <%= gravatar_for u, size: 24 %>
                 </span>
               <% end %>
             <% end %>
